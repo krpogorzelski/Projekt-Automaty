@@ -1,0 +1,17 @@
+{
+  "projectId": "e438zi",
+  "chromeWebSecurity": true,
+  "env": {
+      "url": "https://www.sportclub.com.pl/"
+  },
+  "viewportHeight": 660,
+  "viewportWidth": 1000,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+      "reporterFilename": "[status]_[datetime]-[name]-report",
+      "timestamp": "isoDateTime",
+      "overwrite": false,
+      "html": true,
+      "json": true
+  }
+}
