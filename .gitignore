@@ -3,3 +3,5 @@ mochawesome-report/
 ./videos/.
 ./screenshots/.
 .mp4
+.woff
+.woff2
