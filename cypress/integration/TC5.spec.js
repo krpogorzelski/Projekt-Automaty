@@ -2,7 +2,7 @@
 import projekt from '../fixtures/projekt.json';
 
 context("Fifth test on SportClub.com.pl", () => {
-    describe('Lets remind password', () => {
+    describe('Lets remind password', {tags: 'local'}, () => {
         beforeEach('Enter SportClub page and confirm policy', () => {
             cy.visit(Cypress.env('url'));
             cy.url().should("contain", "www.sportclub.com.pl/");

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 context("Eleventh test on TenisKlub.pl", () => {
-    describe('Lets read sth ab tennis', () => {
+    describe('Lets read sth ab tennis', {tags: 'local'}, () => {
         it('Check some magazines', () => {
             cy.visit('https://tenisklub.pl/');
             cy.get('.menu-toggle').click().wait(2000);

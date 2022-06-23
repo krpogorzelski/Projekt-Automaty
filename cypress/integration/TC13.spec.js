@@ -2,7 +2,7 @@
 
 import projekt from '../fixtures/projekt.json';
 context("Thirteenth test on Poranny", () => {
-    describe('Lets register on Poranny site', () => {
+    describe('Lets register on Poranny site', {tags: 'local'}, () => {
         it('Try to register', () => {
             cy.visit('https://poranny.pl/logowanie').wait(500);
             cy.get('#didomi-notice-agree-button').click().wait(500);

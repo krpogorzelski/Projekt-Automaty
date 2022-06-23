@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 context("Fourth test on SportClub.com.pl", () => {
-    describe('Buy some balls', () => {
+    describe('Buy some balls', {tags: 'local'}, () => {
         beforeEach('Enter SportClub page and confirm policy', () => {
             cy.visit('https://www.sportclub.com.pl/product-pol-35336-pilki-tenisowe-HEAD-4B-HEAD-PRO-571604.html');
             cy.url().should("contain", "www.sportclub.com.pl/");

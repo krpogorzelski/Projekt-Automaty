@@ -3,7 +3,7 @@ import MTFpopUp from '../PageObject/MTFpopUp';
 const cookie = new MTFpopUp ();
 
 context("Twelveth test on Tennis forum", () => {
-    describe('Lets talk ab tennis on forum', () => {
+    describe('Lets talk ab tennis on forum', {tags: 'local'}, () => {
         it('Try to register', () => {
             cy.visit('https://www.menstennisforums.com/').wait(2000);
             cookie.selectCookieMTF().click();

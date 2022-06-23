@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 context("Seventh test on SportClub.com.pl", () => {
-    describe('Lets buy something cheap', () => {
+    describe('Lets buy something cheap', {tags: 'local'}, () => {
         beforeEach('Enter SportClub page and confirm policy', () => {
             cy.visit(Cypress.env('url'));
             cy.url().should("contain", "www.sportclub.com.pl/");
